@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>"><title>Surovi's Bakegraphy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV MOBILE OVERLAY -->
+<div class="nav-overlay" id="mobileNav">
+  <button class="nav-overlay-close" onclick="closeMobileNav()">✕</button>
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#menu" onclick="closeMobileNav()">Menu</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#process" onclick="closeMobileNav()">How It Works</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">Surovi's <span>Bakegraphy</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" onclick="openMobileNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-circle hc1"></div>
+    <div class="hero-circle hc2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">Handcrafted with Love</div>
+      <h1>
+        Cakes That Are
+        <em>Pure &amp; Beautiful</em>
+      </h1>
+      <p class="hero-desc">
+        Every cake at Surovi's Bakegraphy is made with authentic, organic ingredients — 
+        crafted with care for your most cherished celebrations.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Explore Our Cakes →</a>
+        <a href="#about" class="btn-outline">Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Organic Ingredients</div>
+        </div>
+        <div>
+          <div class="stat-num">8</div>
+          <div class="stat-label">Orders Max / Day</div>
+        </div>
+        <div>
+          <div class="stat-num">★ 5.0</div>
+          <div class="stat-label">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <div class="hero-img-main">
+          <div class="cake-illustration">🎂</div>
+        </div>
+        <div class="float-card fc1">
+          <div class="float-card-emoji">🌿</div>
+          <div class="float-card-text">100% Organic</div>
+          <div class="float-card-sub">Fresh ingredients only</div>
+        </div>
+        <div class="float-card fc2">
+          <div class="stars">★★★★★</div>
+          <div class="float-card-text">Top Rated</div>
+          <div class="float-card-sub">by our lovely customers</div>
+        </div>
+        <div class="float-card fc3">
+          <div class="float-card-emoji">🎉</div>
+          <div class="float-card-text">Every Occasion</div>
+          <div class="float-card-sub">Weddings, Birthdays &amp; more</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">Birthday Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Wedding Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Anniversary Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Custom Designs <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Organic Ingredients <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Fresh Baked Daily <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Handcrafted with Love <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Limited to 8 Orders/Day <span class="marquee-dot">✦</span></div>
+    <!-- Duplicated for seamless loop -->
+    <div class="marquee-item">Birthday Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Wedding Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Anniversary Cakes <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Custom Designs <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Organic Ingredients <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Fresh Baked Daily <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Handcrafted with Love <span class="marquee-dot">✦</span></div>
+    <div class="marquee-item">Limited to 8 Orders/Day <span class="marquee-dot">✦</span></div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div style="text-align:center; max-width:600px; margin:0 auto 0;">
+    <div class="section-label">Why Choose Us</div>
+    <h2>Baked with <em>Purpose</em></h2>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <span class="feature-icon">🌿</span>
+      <h3>Authentic Organic Ingredients</h3>
+      <p>We source only the freshest, most authentic organic ingredients. No artificial flavors, no shortcuts — just pure goodness in every layer.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🎨</span>
+      <h3>Beautiful Custom Designs</h3>
+      <p>Each cake is a canvas. We craft beautiful, personalized designs that reflect your vision and make your celebration truly unforgettable.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">❤️</span>
+      <h3>Made with Love &amp; Care</h3>
+      <p>Every cake is baked by hand with genuine passion. We believe food made with love tastes different — and we put our heart into every bake.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🛡️</span>
+      <h3>Health-First Philosophy</h3>
+      <p>We're on a mission to prove that delicious and healthy can coexist. Our recipes are designed to be indulgent without compromising on wellness.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">✨</span>
+      <h3>Limited Daily Orders</h3>
+      <p>We limit to just 8 orders per day to ensure every cake receives the full attention and quality it deserves. No mass production, ever.</p>
+    </div>
+    <div class="feature-card reveal">
+      <span class="feature-icon">🎁</span>
+      <h3>Perfect for All Occasions</h3>
+      <p>From intimate birthdays to grand weddings — whatever your celebration, we create cakes that become the centerpiece of your memory.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU / CAKES -->
+<section id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-label">Our Menu</div>
+      <h2>Our <em>Signature Cakes</em></h2>
+    </div>
+    <div class="order-counter" id="orderCounter">
+      <span class="counter-num" id="ordersLeft">8</span>
+      <div class="counter-label">Orders Left Today</div>
+      <div class="counter-bar">
+        <div class="counter-fill" id="counterFill" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+ <!-- cakes Section -->
+  <div class="cakes-grid" id="cakesGrid">
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#fce4d6,#f4a68a);">
+        <img src="cake_img/vanila.jpg" alt="">
+        <span class="cake-tag popular">Popular</span>
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Classic Vanilla Dream</div>
+        <div class="cake-desc">Layers of soft vanilla sponge with fresh cream and seasonal fruit — timeless, light, and utterly delightful.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,200 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Classic Vanilla Dream')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#d4c0a8,#8b6242);">
+        <img src="cake_img/cocolat.jpg" alt="">
+        <span class="cake-tag">Bestseller</span>
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Decadent Chocolate Fudge</div>
+        <div class="cake-desc">Rich Belgian chocolate layers, velvety ganache, and chocolate shavings. A chocoholic's dream, made with organic cacao.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,500 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Decadent Chocolate Fudge')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#ffd6e0,#ff8fab);">
+        <img src="cake_img/aniver.jpg" alt="">
+        <span class="cake-tag new">New</span>
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Strawberry Blossom</div>
+        <div class="cake-desc">Delicate rose sponge with fresh strawberry compote and whipped cream. A floral celebration in every bite.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,350 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Strawberry Blossom')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#e8f5c8,#9dc65a);">
+        🍋
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Zesty Lemon &amp; Herb</div>
+        <div class="cake-desc">A refreshing lemon curd cake with a hint of fresh basil cream. Light, tangy, and surprisingly complex.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,250 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Zesty Lemon &amp; Herb')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#ffe4b5,#daa520);">
+        🍯
+        <span class="cake-tag popular">Popular</span>
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Honey Caramel Walnut</div>
+        <div class="cake-desc">Warm spiced sponge drizzled with organic honey caramel, crunchy walnuts, and a silky cream cheese frosting.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,600 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Honey Caramel Walnut')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-card reveal">
+      <div class="cake-img" style="background:linear-gradient(145deg,#e6d5f5,#9b59b6);">
+        💜
+        <span class="cake-tag new">New</span>
+      </div>
+      <div class="cake-body">
+        <div class="cake-name">Blueberry Lavender</div>
+        <div class="cake-desc">Aromatic lavender sponge with wild blueberry coulis and vanilla mascarpone. Elegant, floral, and unforgettable.</div>
+        <div class="cake-meta">
+          <div class="cake-price">৳ 1,450 <span>/ cake</span></div>
+          <button class="btn-buy" onclick="handleOrder('Blueberry Lavender')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sold-out-banner" id="soldOutBanner">
+    <span style="font-size:2.5rem">😔</span>
+    <div>
+      <h3>Daily Orders Limit Reached</h3>
+      <p>We've reached our 8-order limit for today. Please check back tomorrow for fresh availability. Thank you for your love! 💛</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="section-label">Our Story</div>
+    <h2>Baking with <em>Integrity</em></h2>
+    <p class="about-text">
+      At Surovi's Bakegraphy, we believe that every celebration deserves a cake that is not only 
+      delicious but also safe and wholesome. In today's world, many cakes are made with low-quality 
+      and unauthentic ingredients, which can be harmful to health. We are here to change that.
+      <br><br>
+      Our mission is simple — to create cakes that you can enjoy without worry. We use authentic, 
+      fresh, and organic ingredients to ensure every bite is both healthy and delightful. Each cake 
+      is crafted with care, creativity, and a passion for baking.
+    </p>
+    <div class="founder-card">
+      <div ><img src="founder_img/1750170518956.jpg" alt="founder image", style="height: 150px; width: 150px; border-radius: 10px;"></div>
+      <div>
+        <div class="founder-name">Nusrat Jahan Surovi</div>
+        <div class="founder-title">Founder &amp; Head Baker, Surovi's Bakegraphy</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-visual reveal">
+    <div class="about-img-grid">
+      <div class="about-img-block aib1">🎂</div>
+      <div class="about-img-block aib2">🌿</div>
+      <div class="about-img-block aib3">🍓</div>
+    </div>
+    <div class="about-quote">
+      <p>"What started as a passion for baking has grown into a commitment to provide healthier and more authentic cakes for everyone."</p>
+      <div class="quote-sig">— Nusrat Jahan Surovi</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div style="text-align:center; max-width:600px; margin:0 auto;">
+    <div class="section-label">How It Works</div>
+    <h2>Order in <em>Simple Steps</em></h2>
+  </div>
+  <div class="process-grid">
+    <div class="process-step reveal">
+      <div class="step-circle" data-num="1">🎂</div>
+      <h3>Browse Our Menu</h3>
+      <p>Explore our signature cakes and find the perfect one for your occasion.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle" data-num="2">🛒</div>
+      <h3>Click "Order Now"</h3>
+      <p>Hit the Order Now button on your chosen cake to proceed.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle" data-num="3">📋</div>
+      <h3>Fill the Order Form</h3>
+      <p>You'll be redirected to our Google Form to enter your details and preferences.</p>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-circle" data-num="4">🎉</div>
+      <h3>We Bake for You</h3>
+      <p>We'll confirm your order and bake your cake fresh with organic ingredients!</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div style="text-align:center; max-width:600px; margin:0 auto 0;">
+    <div class="section-label">Customer Love</div>
+    <h2>What They're <em>Saying</em></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"The Honey Caramel Walnut cake was absolutely breathtaking. The quality of ingredients was evident in every single bite. Our guests couldn't stop asking where we got it!"</p>
+      <div class="t-author">
+        <div class="t-avatar" style="background:#fce4d6;">👩</div>
+        <div>
+          <div class="t-name">Rabeya Khatun</div>
+          <div class="t-loc">Dhaka, BD</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"Finally a cake shop that actually uses healthy ingredients! My kids loved the Strawberry Blossom cake and I didn't have to worry about what they were eating. Truly remarkable."</p>
+      <div class="t-author">
+        <div class="t-avatar" style="background:#e8f5c8;">🧑</div>
+        <div>
+          <div class="t-name">Md. Shahadat Hossain</div>
+          <div class="t-loc">Dhaka, BD</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="t-stars">★★★★★</div>
+      <p class="t-text">"Surovi's dedication to quality is unparalleled. The chocolate cake for our anniversary was more than a dessert — it was an experience. Will order again and again!"</p>
+      <div class="t-author">
+        <div class="t-avatar" style="background:#e6d5f5;">👩</div>
+        <div>
+          <div class="t-name">Fahmida Sultana</div>
+          <div class="t-loc">Dhaka, BD</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label" style="justify-content:flex-start; display:inline-flex;">Get in Touch</div>
+  <h2 style="margin-bottom:0">Let's <em>Connect</em></h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>Have a question? Want to discuss a custom cake? We'd love to hear from you. Reach out and let's make your next celebration extraordinary.</p>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-detail">Dhaka, Bangladesh</div>
+          <div class="contact-sub">Find us here</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div>
+          <div class="contact-detail">01856585426</div>
+          <div class="contact-sub">Call or WhatsApp</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <div class="contact-detail">nusratsurovi62@gmail.com</div>
+          <div class="contact-sub">We reply within 24 hours</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-detail">Wed – Sat 9am – 8pm</div>
+          <div class="contact-sub">Sun - Tue: Closed</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-card reveal">
+      <h3>Send a Message</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Fatima">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Rahman">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone / WhatsApp</label>
+        <input type="tel" placeholder="+880 1856585426">
+      </div>
+      <div class="form-group">
+        <label>Cake Interest</label>
+        <select>
+          <option value="">Select a cake...</option>
+          <option>Classic Vanilla Dream</option>
+          <option>Decadent Chocolate Fudge</option>
+          <option>Strawberry Blossom</option>
+          <option>Zesty Lemon & Herb</option>
+          <option>Honey Caramel Walnut</option>
+          <option>Blueberry Lavender</option>
+          <option>Custom Cake</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your occasion, special requests, or any questions..."></textarea>
+      </div>
+      <button class="btn-primary" onclick="handleContact()" style="width:100%; justify-content:center;">
+        Send Message ✦
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Surovi's <span>Bakegraphy</span></div>
+      <p class="footer-desc">Handcrafted cakes made with authentic, organic ingredients. Every celebration deserves something beautiful and wholesome.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="#" title="Facebook">f</a>
+        <a class="social-btn" href="#" title="Instagram">📷</a>
+        <a class="social-btn" href="#" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#process">How to Order</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Cakes</h4>
+      <ul>
+        <li><a href="#menu">Birthday Cakes</a></li>
+        <li><a href="#menu">Wedding Cakes</a></li>
+        <li><a href="#menu">Anniversary Cakes</a></li>
+        <li><a href="#menu">Custom Designs</a></li>
+        <li><a href="#contact">Inquire Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">Dhaka, Bangladesh</a></li>
+        <li><a href="#">+880 1856585426</a></li>
+        <li><a href="#">nusratsurovi62@gmail.com</a></li>
+        <li><a href="#">WED - SAT: 9am–8pm</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Surovi's Bakegraphy. All rights reserved. Made with ❤️ in Dhaka.</p>
+    <p>Crafted with love, baked with purpose.</p>
+  </div>
+</footer>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('orderModal')">✕</button>
+    <span class="modal-emoji">🎂</span>
+    <h3>Ready to Order?</h3>
+    <p id="modalCakeName">You're ordering: <strong>Classic Vanilla Dream</strong><br><br>
+    You'll be redirected to our Google Form to complete your order. Please fill in your details and we'll get back to you shortly!</p>
+    <div class="modal-actions">
+      <a id="orderFormLink" href="https://form.jotform.com/261091276379464" target="_blank" class="btn-primary" onclick="confirmOrder()">
+        Go to Order Form →
+      </a>
+      <button class="btn-outline" onclick="closeModal('orderModal')">Maybe Later</button>
+    </div>
+  </div>
+</div>
+
+<!-- SOLD OUT MODAL -->
+<div class="modal-overlay" id="soldOutModal">
+  <div class="modal-box sold-modal">
+    <button class="modal-close" onclick="closeModal('soldOutModal')">✕</button>
+    <span class="modal-emoji">😔</span>
+    <h3>Today's Orders Are Full!</h3>
+    <p>We've reached our daily limit of 8 orders to ensure the highest quality for every cake. Please come back tomorrow — we'd love to bake for you!</p>
+    <div class="modal-actions">
+      <a href="#contact" class="btn-primary" onclick="closeModal('soldOutModal')">Get Notified</a>
+      <button class="btn-outline" onclick="closeModal('soldOutModal')">Okay</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+  // ─── ORDER STATE ───────────────────────────────────────
+  const MAX_ORDERS = 8;
+  let ordersPlaced = 0;
+
+  // Persist across page session using sessionStorage
+  if (sessionStorage.getItem('ordersPlaced')) {
+    ordersPlaced = parseInt(sessionStorage.getItem('ordersPlaced'));
+  }
+
+  function updateCounter() {
+    const left = MAX_ORDERS - ordersPlaced;
+    document.getElementById('ordersLeft').textContent = left;
+    const pct = (ordersPlaced / MAX_ORDERS) * 100;
+    document.getElementById('counterFill').style.width = pct + '%';
+
+    // Disable all buy buttons if sold out
+    if (left <= 0) {
+      document.querySelectorAll('.btn-buy').forEach(b => b.classList.add('disabled'));
+      document.getElementById('soldOutBanner').classList.add('show');
+    }
+  }
+
+  updateCounter();
+
+  function handleOrder(cakeName) {
+    if (ordersPlaced >= MAX_ORDERS) {
+      openModal('soldOutModal');
+      return;
+    }
+    document.getElementById('modalCakeName').innerHTML =
+      `You're about to order: <strong>${cakeName}</strong><br><br>
+      You'll be redirected to our Google Form to complete your order details.`;
+    openModal('orderModal');
+    // Store selected cake for form link
+    document.getElementById('orderFormLink').dataset.cake = cakeName;
+  }
+
+  function confirmOrder() {
+    ordersPlaced++;
+    sessionStorage.setItem('ordersPlaced', ordersPlaced);
+    updateCounter();
+    closeModal('orderModal');
+    showToast('🎉 Redirecting to order form...');
+  }
+
+  // ─── MODAL ───────────────────────────────────────────────
+  function openModal(id) {
+    document.getElementById(id).classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('show');
+    document.body.style.overflow = '';
+  }
+  // Close on overlay click
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal(overlay.id);
+    });
+  });
+
+  // ─── TOAST ────────────────────────────────────────────────
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3500);
+  }
+
+  // ─── CONTACT FORM ─────────────────────────────────────────
+  function handleContact() {
+    showToast('✉️ Message sent! We\'ll be in touch soon.');
+  }
+
+  // ─── NAVBAR SCROLL ────────────────────────────────────────
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ─── MOBILE NAV ───────────────────────────────────────────
+  function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+  function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+
+  // ─── SCROLL REVEAL ────────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
